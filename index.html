@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="shortcut icon" type="image/png" href="img/topLogo1.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+        
+        <title>Junya Watanabe</title>
+    </head>
+    <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link" onclick="closeNav()"> Top </a></li>
+                    <li class="navigation__item"><a href="#section-about" class="navigation__link" onclick="closeNav()">Profile</a></li>
+                    <li class="navigation__item"><a href="#section-features" class="navigation__link" onclick="closeNav()">Skill </a></li>
+                    <li class="navigation__item"><a href="#section-stories" class="navigation__link" onclick="closeNav()">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header class="header">
+            <div class="header__logo-box">
+                <img src="img/topLogo1.png" alt="Logo" class="header__logo">
+            </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Portfolio</span>
+                    <span class="heading-primary--sub typed"></span>
+                </h1>
+            </div>
+        </header>
+        
+        <main>
+            <section class="section-about" id="section-about">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        profile
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-small"></h3>
+                        <p class="paragraph">
+							渡邊 純也と申します。<br>
+							<br>
+							新潟県小千谷市出身、1993年生まれの26歳です。<br>
+							高校を卒業後、工作機械メーカーに7年間勤務。友人の影響でエンジニアの魅力に惹かれ、2019年4月より独学を開始。コーディングもデザインもできるエンジニアになるため、日々奮闘中です。<br>
+							<br>
+							趣味は登山で、日本百名山を踏破することが夢です。<br>
+							他にバスケットボール、スノーボード、カメラ、レザークラフト、一人旅、海外ドラマが好きで、これから料理とキャンプも始めたいと思っています。やりたいことが山積みで時間が足りません！
+                        </p>
+
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="composition">
+                            <img src="img/about1.jpg" alt="Photo1" class="composition__photo composition__photo--p1">
+                            <img src="img/about2.jpg" alt="Photo2" class="composition__photo composition__photo--p2">
+                            <img src="img/about3.jpg" alt="Photo3" class="composition__photo composition__photo--p3">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-features" id="section-features">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary1">
+                        Skill
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+							<i class="feature-box__icon fab fa-html5"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">HTML5</h3>
+                            <p class="feature-box__text">
+								・Webサイト作成<br>
+								・LP作成
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon fab fa-css3-alt"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">CSS3</h3>
+                            <p class="feature-box__text">
+								・BEM設計の理解<br>
+								・SCSSの使用
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon fab fa-js"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">JavaScript</h3>
+                            <p class="feature-box__text">
+								・アプリ作成<br>
+								・jQueryの使用
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon fab fa-vuejs"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Vue.js</h3>
+                            <p class="feature-box__text">
+								・ToDoアプリ作成<br>
+								・ブログアプリ作成
+                            </p>
+                        </div>
+                    </div>
+				</div>
+				
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+							<i class="feature-box__icon fab fa-php"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">PHP</h3>
+                            <p class="feature-box__text">
+								・WordPressテーマ作成<br>
+								・フォーム作成
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+							<h1 class="feature-box__title">Ps</h1>
+                            <h3 class="heading-tertiary u-margin-bottom-small">PhotoShop</h3>
+                            <p class="feature-box__text">
+								・写真の加工修正<br>
+								・リーフレット作成
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+							<h1 class="feature-box__title">Ai</h1>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Illustrator</h3>
+                            <p class="feature-box__text">
+								・名刺作成<br>
+								・ロゴ作成
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+							<h1 class="feature-box__title">Xd</h1>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Adobe XD</h3>
+                            <p class="feature-box__text">
+								・Webデザイン経験<br>
+								・プロトタイプの作成
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-stories" id="section-stories">
+            
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        Portfolio
+					</h2>
+				</div>
+
+				<div class="filter">
+					<ul id="filters">
+						<li><a href="#" data-filter="*" class="current btn">ALL</a></li>
+						<li><a href="#" data-filter=".websites" class="btn">LP</a></li>
+						<li><a href="#" data-filter=".jsapp" class="btn">JS APP</a></li>
+						<li><a href="#" data-filter=".vueapp" class="btn">Vue APP</a></li>
+					</ul>
+				</div>
+
+				<div class="itemsContainer">
+					<ul class="items">
+						<li class="websites">
+							<div class="item">
+								<img src="img/web1.png" alt="">
+								<div class="icons">
+									<a href="img/web1-big.png" title="View image" class="openButton icon-box" data-fancybox data-caption="教材に沿って作成">
+										<i class="fa fa-search"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>	
+                        </li>
+                        
+						<li class="websites">
+							<div class="item">
+								<img src="img/web2.png" alt="">
+								<div class="icons">
+									<a href="img/web2-big.png" title="View image" class="openButton icon-box" data-fancybox data-caption="Webサイトの写経">
+										<i class="fa fa-search"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>	
+                        </li>
+
+						<li class="websites">
+							<div class="item">
+								<img src="img/web3.png" alt="">
+								<div class="icons">
+									<a href="img/web3-big.png" title="View image" class="openButton icon-box" data-fancybox data-caption="教材に沿って作成">
+										<i class="fa fa-search"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>	
+                        </li>
+                        
+                        <li class="vueapp">
+                            <div class="item">
+                                <a class="modal" href="#video"><img src="img/app1.png" alt=""></a>
+                                <div id="video">
+                                    <video id="player" controls width="640" height="360">
+                                        <source src="img/movie/app1-big.mov">
+                                    </video>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="jsapp">
+                            <div class="item">
+                                <a class="modal" href="#video1"><img src="img/js1.png" alt=""></a>
+                                <div id="video1">
+                                    <video id="player" controls width="640" height="360">
+                                        <source src="img/movie/js1-big.mov">
+                                    </video>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="jsapp">
+                            <div class="item">
+                                <a class="modal" href="#video2"><img src="img/js2.png" alt=""></a>
+                                <div id="video2">
+                                    <video id="player" controls width="640" height="360">
+                                        <source src="img/movie/js2-big.mov">
+                                    </video>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="jsapp">
+                            <div class="item">
+                                <a class="modal" href="#video3"><img src="img/js3.png" alt=""></a>
+                                <div id="video3">
+                                    <video id="player" controls width="640" height="360">
+                                        <source src="img/movie/js3-big.mov">
+                                    </video>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="jsapp">
+                            <div class="item">
+                                <a class="modal" href="#video4"><img src="img/js4.png" alt=""></a>
+                                <div id="video4">
+                                    <video id="player" controls width="640" height="360">
+                                        <source src="img/movie/js4-big.mov">
+                                    </video>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="jsapp">
+                            <div class="item">
+                                <a class="modal" href="#video5"><img src="img/js5.png" alt=""></a>
+                                <div id="video5">
+                                    <video id="player" controls width="640" height="360">
+                                        <source src="img/movie/js5-big.mov">
+                                    </video>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="jsapp">
+                            <div class="item">
+                                <a class="modal" href="#video6"><img src="img/js6.png" alt=""></a>
+                                <div id="video6">
+                                    <video id="player" controls width="640" height="360">
+                                        <source src="img/movie/js6-big.mov">
+                                    </video>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="jsapp">
+                            <div class="item">
+                                <a class="modal" href="#video7"><img src="img/js7.png" alt=""></a>
+                                <div id="video7">
+                                    <video id="player" controls width="640" height="360">
+                                        <source src="img/movie/js7-big.mov">
+                                    </video>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="jsapp">
+                            <div class="item">
+                                <a class="modal" href="#video8"><img src="img/js8.png" alt=""></a>
+                                <div id="video8">
+                                    <video id="player" controls width="640" height="360">
+                                        <source src="img/movie/js8-big.mov">
+                                    </video>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="jsapp">
+                            <div class="item">
+                                <a class="modal" href="#video9"><img src="img/js9.png" alt=""></a>
+                                <div id="video9">
+                                    <video id="player" controls width="640" height="360">
+                                        <source src="img/movie/js9-big.mov">
+                                    </video>
+                                </div>
+                            </div>
+                        </li>
+
+					</ul>
+				</div>
+            </section>
+        </main>
+       
+
+       <footer class="footer">
+           <div class="footer__logo-box">
+                <img class="footer__size" src="img/footerLogo1.png" alt="image">
+           </div>
+           
+           <div class="row">
+               <div class="col-1-of-2">
+                   <div class="footer__navigation">
+                       <ul class="footer__list">
+                           <li class="footer__item"><a href="#" class="footer__link">top</a></li>
+                           <li class="footer__item"><a href="#section-about" class="footer__link">profile</a></li>
+                           <li class="footer__item"><a href="#section-features" class="footer__link">skill</a></li>
+                           <li class="footer__item"><a href="#section-stories" class="footer__link">portfolio</a></li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="col-1-of-2">
+                   <p class="footer__copyright">
+                       <span class="footer__copyright-mail">E-mail : jun22abc@gmail.com</span><br>
+					   &copy; 2020 Junya Watanabe.
+                   </p>
+               </div>
+           </div>
+       </footer>
+
+	<script>
+	function closeNav() {
+		document.getElementById("navi-toggle").checked = false;
+	}
+	</script>
+    <script src="js/jquery.min.js" ></script>
+    <script src="js/typed.min.js" ></script>
+    <script src="js/script.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    </body>
+</html>
